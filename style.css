@@ -305,7 +305,7 @@ img{
 	.home .home-content .text-1{
 	font-size: 40px;
 	font-weight: 600;
-	margin-left: 25px;
+	margin-left: -55px;
 	}
 
 	.box{
@@ -314,7 +314,7 @@ img{
 	font-size: 40px;
 	transform: translateY(-70%);
 	font-weight: 600;
-	margin-left: 30px;
+	margin-left: -50px;
 	width: calc(100% - 180px);
 	}
 
@@ -322,7 +322,7 @@ img{
 	position: absolute;
 	font-size: 40px;
 	font-weight: 600;
-	margin-left: 200px;
+	margin-left: 50px;
 	top: 60%;
 	}
 
