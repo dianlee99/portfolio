@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family: "Open Sans", sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin: 0 0 0 0;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/*variable css*/
+:root{
+	--header-height: 3rem;
+	--font-medium: 500;
+}
+
+/*margins*/
+:root{
+	--mb-1: 0.5rem;
+	--mb-2: 1rem;
+	--mb-3: 1.5rem;
+	--mb-4: 2rem;
+}
+
+.section{
+	padding: 3rem 0;
+}
+
+/*layout*/
+.bd-grid{
+	max-width: 1024px;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-column-gap: 2rem;
+	width: calc(100% - 2rem);
+	margin-left: var(--mb-2);
+	margin-right: var(--mb-2);
+}
+
+.max-width{
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+
+/*navbar styling*/
+.navbar{
+	padding: 20px 0;
+	width: 100%;
+	background-color: #FFF;
+	overflow: hidden;
+	z-index: 1000;
+}
+
+.navbar .max-width{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar .logo a{
+	font-family: "Reenie Beanie";
+	font-size: 64px;
+	font-weight: 300;
+	color: #000;
+}
+
+.navbar .menu li{
+	list-style: none;
+	display: inline-block;
+}
+
+.navbar .menu li a{
+	color: #000;
+	font-size: 16px;
+	margin-left: 30px;
+}
+
+.navbar .menu li a:hover{
+	color: grey;
+}
+
+/*rotating words styling*/
+.box{
+	position: absolute;
+	top: 51%;
+	font-size: 80px;
+	transform: translateY(-70%);
+	font-weight: 600;
+	margin-left: 30px;
+	width: calc(100% - 180px);
+}
+
+.word{
+	display: inline-block;
+	cursor:pointer;
+}
+
+.backImg{
+ 	background: url('assets/dian.png') center center no-repeat fixed;
+ 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.backImg2{
+ 	background: url('assets/uxdesign.png') center center no-repeat fixed;
+ 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.backImg3{
+ 	background: url('assets/multidisciplinary.png') center center no-repeat fixed;
+ 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.backImg4{
+ 	background: url('assets/cmu.png') center center no-repeat fixed;
+ 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.word span{
+	position: absolute;
+	top: 0px;
+	overflow: hidden;
+	animation: animate 12s linear infinite;
+	opacity: 0;
+	color: #407CB9;
+}
+@keyframes animate{
+	0%{
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	2%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+	18%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+	20%{
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	100%{
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+}
+
+.word .first{
+	animation-delay: 0s;
+}
+.word .second{
+	animation-delay: 3s;
+}
+.word .third{
+	animation-delay: 6s;
+}
+.word .fourth{
+	animation-delay: 9s;
+}
+
+
+/*home section styling */
+.home{
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	height: 90vh;
+	min-height: 500px;
+	row-gap: 5rem;
+}
+
+.home-scroll{
+	position: absolute;
+	left: 46%;
+	bottom: 45px;
+	width: 150px;
+	align-self: center;
+	padding-bottom: var(--mb-4);
+}
+
+.home-scroll-link{
+	color: grey;
+}
+
+.home .max-width{
+	margin: 150px 0 auto 60px;
+}
+
+.home .home-content .text-1{
+	font-size: 80px;
+	font-weight: 600;
+	margin-left: 25px;
+}
+
+.home .home-content .text-2{
+	position: absolute;
+	font-size: 80px;
+	font-weight: 600;
+	margin-left: 893px;
+}
+
+/*work*/
+.portfolio-container{
+	justify-items: center;
+	row-gap: 2rem;
+}
+
+.portfolio-img{
+	position: relative;
+	overflow: hidden;
+}
+
+.portfolio-img img{
+	border-radius: .5rem;
+}
+
+.portfolio-link{
+	position: absolute;
+	bottom: -100%;
+	width: 100%;
+	height:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, .3);
+	border-radius: .5rem;
+	cursor: pointer;
+	backdrop-filter: blur (10px);
+	transition:.3s;
+}
+
+.portfolio-img:hover .portfolio-link{
+	bottom:0;
+}
+
+.portfolio-link-name{
+	color: black;
+	font-weight: bold;
+}
+
+/* media queries */
+@media screen and (min-width: 768px){
+	body{
+		margin: 0;
+	}
+
+	.section{
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.home-container{
+		height:100vh;
+		grid-template-rows: 1.7fr 1fr;
+		row-gap: 0;
+	}
+
+	.portfolio-container{
+		justify-items: center;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		column-gap: 2rem;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.bd-grid{
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.home .home-content .text-1{
+	font-size: 40px;
+	font-weight: 600;
+	margin-left: 25px;
+	}
+
+	.box{
+	position: absolute;
+	top: 51%;
+	font-size: 40px;
+	transform: translateY(-70%);
+	font-weight: 600;
+	margin-left: 30px;
+	width: calc(100% - 180px);
+	}
+
+	.home .home-content .text-2{
+	position: absolute;
+	font-size: 40px;
+	font-weight: 600;
+	margin-left: 200px;
+	top: 60%;
+	}
+
+}
+
+/* about page */
+.abouthome{
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	/*height: 90vh;*/
+	min-height: 500px;
+	row-gap: 5rem;
+}
+
+h2{
+	font-family: "Open Sans";
+	font-weight:300;
+	font-size: 64px;
+}
+
+p1{
+	font-family: "Open Sans";
+	font-weight:300;
+	font-size: 24px;
+}
+
+.aboutlink{
+	color: #407cb9;
+	font-weight: 600;
+}
+
+/* footer */
+.footer section{
+	padding: 0px 0;
+	width: 100%;
+	background-color: #FFF;
+	overflow: hidden;
+	z-index: 1000;
+}
+
+.footer .max-width{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer .footer-title{
+	font-size: 16px;
+	font-weight: normal;
+	color: grey;
+}
+
+.footer .footer-social{
+	list-style: none;
+	display: inline-block;
+}
+
+.footer .footer-social{
+	color: #000;
+	font-size: 30px;
+	margin-left: 10px;
+}
+
+.footer .footer-social:hover{
+	color: grey;
+}

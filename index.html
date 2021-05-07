@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UFT-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dian Lee Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Reenie+Beanie&display=swap" rel="stylesheet">
+	<!-- box icons-->
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="max-width">
+			<div class="logo"><a href="index.html">D</a></div>
+			<ul class="menu">
+				<li><a href="#work">work</a></li>
+				<li><a href="about.html">about</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main class="main">
+
+	<!-- home section starts here -->
+	<section class="home" id="home">
+		<div class="max-width">
+			<div class="home-content">
+				<div class="text-1">Hi there,</div>
+			
+			<!-- rotating words start here -->
+				<div class="box">I am
+					<div class="word">
+						<span class="first">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;d</span>
+						<span class="second">&ensp;a design technic</span>
+						<span class="third">a multidisciplinar</span>
+						<span class="fourth">&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;a colleg</span>
+					</div>
+
+					<script type="text/javascript">
+						  $(document).ready(function(){
+						 	$(".word .first").mouseenter(function(){
+						 		$(".home").addClass("backImg");
+						 	});
+						 	$(".word .first").mouseleave(function(){
+						 		$(".home").removeClass("backImg");
+						 	});
+						 	$(".word .second").mouseenter(function(){
+						 		$(".home").addClass("backImg2");
+						 	});
+						 	$(".word .second").mouseleave(function(){
+						 		$(".home").removeClass("backImg2");
+						 	});
+						 	$(".word .third").mouseenter(function(){
+						 		$(".home").addClass("backImg3");
+						 	});
+						 	$(".word .third").mouseleave(function(){
+						 		$(".home").removeClass("backImg3");
+						 	});
+						 	$(".word .fourth").mouseenter(function(){
+						 		$(".home").addClass("backImg4");
+						 	});
+						 	$(".word .fourth").mouseleave(function(){
+						 		$(".home").removeClass("backImg4");
+						 	});
+						 });
+					</script>
+
+			<!-- and ends here--> 
+			</div>
+			<div class="text-2">ian</div>
+			<div class="home-scroll">
+				<a href="#work" class="home-scroll-link">See my work</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- work section starts here -->
+	<section class="work" id="work">
+		<div class="portfolio-container bd-grid">
+			<div class="portfolio-img">
+				<img src="assets/project1/foodbankthumb.png" alt="foodbank">
+
+				<a href="foodbank.html" class="portfolio-link">
+					<div class="portfolio-link-name">Foodbank Locator</div>
+				</a>
+			</div>
+
+			<div class="portfolio-img">
+				<img src="assets/project2/guardianthumb.png" alt="guardian">
+
+				<a href="guardian.html" class="portfolio-link">
+					<div class="portfolio-link-name">Guardian</div>
+				</a>
+			</div>
+
+			<div class="portfolio-img">
+				<img src="assets/project3/nanathumb.png" alt="nana">
+
+				<a href="nana.html" class="portfolio-link">
+					<div class="portfolio-link-name">Nana+</div>
+				</a>
+			</div>
+
+			<div class="portfolio-img">
+				<img src="assets/project4/internthumb.png" alt="intern">
+
+				<a href="other.html" class="portfolio-link">
+					<div class="portfolio-link-name">Internships</div>
+				</a>
+			</div>
+
+			<div class="portfolio-img">
+				<img src="assets/project5/cuithumb.png" alt="cui">
+
+				<a href="other.html" class="portfolio-link">
+					<div class="portfolio-link-name">CUI</div>
+				</a>
+			</div>
+
+			<div class="portfolio-img">
+				<img src="assets/project6/atlantisthumb.png" alt="atlantis">
+
+				<a href="other.html" class="portfolio-link">
+					<div class="portfolio-link-name">Atlantis Hub</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer class = "footer section">
+		<div class = "max-width">
+			<div class="footer-social">
+				<a href="mailto:dianlee99@gmail.com"><i class='bx bx-mail-send'></i></a>
+			</div>
+			<div class="footer-title">© dian lee</div>
+			<div class="footer-social">
+				<a href="https://www.linkedin.com/in/dian-lee/"><i class='bx bxl-linkedin-square'></i></a>
+				<a href="https://www.instagram.com/dianlee99/"><i class='bx bxl-instagram'></i></a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- scroll reveal -->
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>
